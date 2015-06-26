@@ -25,9 +25,12 @@
 				success: function(response)
 				{
 					if(response == "success")
+						//var name = "logedin";
 						$("#lg-form").slideUp('slow', function(){
 							$("#message").html('<p class="success">You have logged in successfully!</p><p>Redirecting....</p>');
-							 window.location='album.html'
+							var name = "logedin";
+							 var data = Math.floor((Math.random() * 10000000) + 999);;
+							 window.location='album.php?login=' +name+ '&data=' +data;
 						});
 					else
 						$("#message").html('<p class="error">ERROR: Invalid username and/or password.</p>');

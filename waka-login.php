@@ -14,8 +14,15 @@
 		
 		if($username == 'vivmeng' && $password == 'vivmeng531')
 		{
-			echo "success";
+		/*
+			session_start();
+			$_SESSION['login'] = "logedin";
+			return $_SESSION['login'];
+			*/
+			echo"success";
+			//echo $msg;
 		}
+		
 	}
 
 ?>

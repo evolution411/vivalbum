@@ -1,4 +1,17 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+
+<?php
+if(isset($_GET["login"]) && trim($_GET["login"]) == 'logedin' && isset($_GET["data"]) && trim($_GET["data"])!=""){
+   echo"";
+}
+else{
+   header( 'Location: index.php' ) ;
+}
+
+?>
+
+
 <html>
     <head>
         <title>Album</title>
